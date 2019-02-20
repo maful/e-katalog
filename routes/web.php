@@ -24,5 +24,5 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('suppliers', 'SupplierController')->except(['show']);
 
     Route::get('products/get-json', 'ProductController@jsonProducts');
-    Route::resource('products', 'ProductController');
+    Route::resource('products', 'ProductController')->except(['show']);
 });
