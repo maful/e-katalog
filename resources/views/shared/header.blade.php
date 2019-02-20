@@ -38,6 +38,9 @@
                         <a href="{{ route('home') }}" class="nav-link"><i class="fe fe-home"></i> Beranda</a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{ route('suppliers.index') }}" class="nav-link"><i class="fe fe-users"></i> Supplier</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fe fe-log-out"></i> Keluar</a>
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
