@@ -7,6 +7,7 @@
             <div class="card-header">
                 <h3 class="card-title">Data Supplier</h3>
                 <div class="card-options">
+                    <a href="javascript:void(0)" id="reload-table" class="btn btn-sm btn-pill btn-secondary mr-2"><i class="fe fe-refresh-cw mr-2"></i>Refresh</a>
                     <a href="{{ route('suppliers.create') }}" class="btn btn-sm btn-pill btn-primary">Tambah Supplier</a>
                 </div>
             </div>
@@ -42,7 +43,7 @@
 @section('js')
 <script>
 require(['datatables', 'jquery'], function(datatable, $) {
-    $('#datatable').DataTable({
+    var oTable = $('#datatable').DataTable({
         lengthChange: false,
         serverSide: true,
         ajax: '{{ url('suppliers/get-json') }}',
@@ -67,6 +68,10 @@ require(['datatables', 'jquery'], function(datatable, $) {
                 className: "text-right"
             }
         ]
+    });
+
+    $("#reload-table").click(function() {
+        oTable.ajax.reload(null, false);
     });
 });
 </script>
