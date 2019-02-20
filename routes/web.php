@@ -22,4 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware(['auth'])->group(function () {
     Route::get('suppliers/get-json', 'SupplierController@jsonSuppliers');
     Route::resource('suppliers', 'SupplierController')->except(['show']);
+
+    Route::get('products/get-json', 'ProductController@jsonProducts');
+    Route::resource('products', 'ProductController');
 });

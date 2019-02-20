@@ -11,6 +11,7 @@ Aplikasi Katalog untuk menampilkan produk-produk dari supplier.
 - Migrasi Database, jalankan perintah `php artisan migrate`
 - Mengisi data wilayah Indonesia, jalankan perintah `php artisan laravolt:indonesia:seed`
 - Membuat contoh data, jalankan perintah `php artisan db:seed`
+- Membuat tautan simbolik, jalankan perintah `php artisan storage:link`
 - Menjalankan aplikasi, jalankan perintah `php artisan serve`
 
 ## Kredensial
