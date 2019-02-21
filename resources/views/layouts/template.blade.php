@@ -28,6 +28,7 @@
     </script>
     <!-- Dashboard Core -->
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
     <script src="{{ asset('js/dashboard.js') }}"></script>
     <!-- c3.js') }} Charts Plugin -->
     <link href="{{ asset('plugins/charts-c3/plugin.css') }}" rel="stylesheet" />
