@@ -23,4 +23,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/products/get-json', 'ProductController@jsonProducts');
     Route::resource('products', 'ProductController')->except(['show']);
+
+    Route::get('profile', 'ProfileController@index');
+    Route::get('profile/edit', 'ProfileController@edit');
+    Route::patch('profile/{user}', 'ProfileController@update');
 });

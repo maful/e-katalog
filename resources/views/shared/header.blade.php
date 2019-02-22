@@ -47,6 +47,9 @@
                             <a href="{{ route('products.index') }}" class="nav-link"><i class="fe fe-database"></i> Produk</a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ url('profile') }}" class="nav-link"><i class="fe fe-user"></i> Profil</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fe fe-log-out"></i> Keluar</a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
