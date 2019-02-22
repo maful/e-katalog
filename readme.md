@@ -20,3 +20,15 @@ Aplikasi Katalog untuk menampilkan produk-produk dari supplier.
 Email : ekatalog@gmail.com
 Password : secret
 ```
+
+## Screenshots
+- Halaman Utama
+![Halaman Utama](https://raw.githubusercontent.com/maful/e-katalog/master/screenshots/Index.png)
+- Login
+![Login](https://raw.githubusercontent.com/maful/e-katalog/master/screenshots/Login.png)
+- Data Supplier
+![Data Supplier](https://raw.githubusercontent.com/maful/e-katalog/master/screenshots/Data%20Supplier.png)
+- Data Produk
+![Data Produk](https://raw.githubusercontent.com/maful/e-katalog/master/screenshots/Data%20Produk.png)
+- Profil
+![Profil](https://raw.githubusercontent.com/maful/e-katalog/master/screenshots/Profil.png)
